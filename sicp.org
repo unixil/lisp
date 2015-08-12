@@ -1,0 +1,31 @@
+* 
+** Elements of Programming
+Means to realize simple ideas to complex one:
+- primitive expressions
+- means of combination
+- means of abstract
+In LISP, we deal with two kinds of elements: procedures and data.
+*** Naming and Environment
+The possibility of associating values with symbols and later retriving
+them means that the interpreter must maintain some sort of memory that
+keeps track of name-object pair. This memory is called /environment/.
+*** Evaluating combinations
+To evaluating a combination, do the following:
+1. Evaluating the subsection of the combinations
+2. Apply the procedure that is the value of the leftmost
+subexpression(the operator) to the arguments that are the values of
+the other subexpressions(the operand)
+*** Compound procedure
+*** The Substitution Model for Procedure Application
+*** Conditional Expressions and Predicates
+(cond (<p> <e>)
+      (else <e>))
+
+(if <p> <e> <alter e>)
+** Procedures and the Processes They Generate
+*** Linear Recursive and Iteration
+A procedure is recursive doesn't necessarily mean it is a recursive
+process, the process may be iterative.
+*** Tree recursive
+**** TODO coin change
+*** Order of Growth
